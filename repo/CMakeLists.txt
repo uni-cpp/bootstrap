@@ -14,4 +14,5 @@ set( CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE )
 
 add_subdirectory( ${SOURCE_DIR}/common )
 add_subdirectory( ${SOURCE_DIR}/async-data-manager )
+add_subdirectory( ${SOURCE_DIR}/san-issue-detector )
 add_subdirectory( ${SOURCE_DIR}/motors )
