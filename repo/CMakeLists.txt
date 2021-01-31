@@ -8,11 +8,15 @@ set( SOURCE_DIR "${CMAKE_SOURCE_DIR}" )
 set( BUILD_DIR "${CMAKE_BINARY_DIR}" )
 set( INSTALL_DIR "${BUILD_DIR}/install" )
 
+set( CMAKE_INSTALL_LIBDIR lib )
+set( CMAKE_INSTALL_BINDIR bin )
+set( CMAKE_INSTALL_INCLUDEDIR include )
+
 set( CMAKE_INSTALL_PREFIX ${INSTALL_DIR} )
-set( CMAKE_INSTALL_RPATH ${INSTALL_DIR}/usr/lib )
+set( CMAKE_INSTALL_RPATH ${INSTALL_DIR}/${CMAKE_INSTALL_LIBDIR} )
 set( CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE )
 
 add_subdirectory( ${SOURCE_DIR}/common )
 add_subdirectory( ${SOURCE_DIR}/async-data-manager )
 add_subdirectory( ${SOURCE_DIR}/san-issue-detector )
-add_subdirectory( ${SOURCE_DIR}/motors )
+add_subdirectory( ${SOURCE_DIR}/external/gtest )
