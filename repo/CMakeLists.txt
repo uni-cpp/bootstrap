@@ -24,3 +24,5 @@ add_subdirectory( ${SOURCE_DIR}/external/gtest )
 add_subdirectory( ${SOURCE_DIR}/external/json )
 
 add_subdirectory( ${SOURCE_DIR}/leetcode )
+
+add_subdirectory( ${SOURCE_DIR}/dna )
